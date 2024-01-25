@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 const Reviews = ({reviews}) => {
     return (
-        <div>
+        <div className="card reviews">
             <h2>Reviews</h2>
-            <p>{reviews}</p>
+            <p>{reviews.toLocaleString()}</p>
         </div>
     )
 }

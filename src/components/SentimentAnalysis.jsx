@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 const SentimentAnalysis = ({sentimentAnalysis}) => {
     return (
-        <div>
+        <div className="card sentiment">
             <h2>Sentiment Analysis</h2>
             {sentimentAnalysis.map((sent) => (
                 <p>{sent}</p>

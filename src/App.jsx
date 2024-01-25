@@ -1,4 +1,5 @@
 import './App.css'
+import Menu from './components/Menu'
 import Reviews from './components/Reviews'
 import AverageRating from './components/AverageRating'
 import WebsiteVisitors from './components/WebsiteVisitors'
@@ -12,7 +13,8 @@ const App = () => {
   const websiteVisitors = 821
 
   return (
-    <div>
+    <div className='appContent'>
+      <Menu />
       <Reviews reviews={reviews} />
       <AverageRating averageRating={averageRating} />
       <SentimentAnalysis sentimentAnalysis={sentimentAnalysis} />
